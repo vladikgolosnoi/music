@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя песня</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="player">
+        <h1>Моя песня</h1>
+        <audio id="audio" src="song.mp3"></audio>
+        <div class="controls">
+            <button id="playPauseBtn"><i class="fas fa-play"></i></button>
+            <input type="range" id="seekBar" value="0">
+            <div class="time-display">
+                <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+            </div>
+        </div>
+        <div class="timer-controls">
+            <label for="timerInput">Таймер остановки (в минутах):</label>
+            <input type="number" id="timerInput" min="1" placeholder="Введите время">
+            <div class="timer-buttons">
+                <button id="setTimerBtn"><i class="fas fa-hourglass-start"></i> Установить таймер</button>
+                <button id="clearTimerBtn"><i class="fas fa-hourglass-end"></i> Очистить таймер</button>
+            </div>
+            <p id="timeRemaining">Осталось: 0:00</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

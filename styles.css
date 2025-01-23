@@ -1,0 +1,168 @@
+/* Основные стили */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #1a1a1a; /* Тёмный фон */
+    color: #fff;
+}
+
+.player {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 50%;
+    color: #fff;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    height: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: #0056b3;
+}
+
+input[type="range"]:hover {
+    opacity: 1;
+}
+
+.time-display {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.timer-controls {
+    margin-top: 20px;
+}
+
+.timer-controls label {
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.timer-controls input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+.timer-controls input[type="number"]:focus {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.timer-controls input[type="number"]::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.timer-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.timer-buttons button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.timer-buttons button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+.timer-buttons button:active {
+    transform: scale(0.95);
+}
+
+#timeRemaining {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 10px;
+    opacity: 0.8;
+}
